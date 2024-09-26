@@ -1,0 +1,126 @@
+@keyframes hearbeat
+    0%
+        transform: scale(1)
+    50%
+        transform: scale(1.1)
+    100%
+        transform: scale(1)
+.win
+    min-height: 815px
+    background-color: #000
+    padding: 70px 0 70px 0
+    &__top-bar
+        margin-bottom: 39px
+        position: relative
+        padding-left: 164px
+    &__promo
+        position: absolute
+        left: 0
+        top: -55px
+        animation: hearbeat 1.5s ease-in 0s infinite
+    &__descr
+        font-weight: 400
+        font-size: 18px
+        line-height: 189%
+        color: #fff
+        margin-bottom: 25px
+        & span
+            font-weight: 700
+            color: var(--local-blue)
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        align-items: end
+    &__form
+        display: grid
+        grid-template-columns: 460px
+        grid-template-rows: 35px 35px 120px auto
+        row-gap: 35px
+    &__text-input
+        background: none
+        border: none
+        border-bottom: solid 1px #777
+        font-weight: 300
+        font-size: 18px
+        color: #fff
+        &::placeholder
+            font-weight: 300
+            font-size: 18px
+            color: #fff
+    &__dropbox
+        height: 100%
+        position: relative
+        & input
+            position: absolute
+            width: 100%
+            height: 100%
+            opacity: 0
+            z-index: 10
+            color: #fff
+        & label
+            display: block
+            position: absolute
+            width: 100%
+            height: 100%
+            top: 0
+            border: 1px dashed #777
+            text-align: center
+            padding: 40px
+            & span
+                text-decoration: none
+                font-weight: 300
+                font-size: 12px
+                color: #fff
+                &.underline
+                    font-weight: 300
+                    font-size: 18px
+                    text-decoration: underline
+                    color: #fff
+    &__btn
+        transition: all 0.3s
+        padding: 15px 50px
+        width: 192px
+        height: 59px
+        border: none
+        background-color: var(--local-yellow)
+        font-weight: 700
+        font-size: 18px
+        color: #000
+        cursor: pointer
+        &:hover
+            background-color: #fff
+    &__policy
+        margin-top: 15px
+        & input
+            display: none
+        & input:checked+label .win__checkbox::before
+            opacity: 1
+        & input:user-invalid+label .win__checkbox
+            border-color: red
+        & label
+            position: relative
+            display: grid
+            font-weight: 300
+            font-size: 12px
+            color: #fff
+            grid-template-columns: 14px auto
+            column-gap: 10px
+            align-items: center
+    &__checkbox
+        position: relative
+        width: 14px
+        height: 14px
+        border: 1px solid #777777
+        &::before
+            transition: all 0.1s
+            content: ''
+            opacity: 0
+            position: absolute
+            width: 4px
+            height: 7px
+            border: 1px solid var(--local-yellow)
+            border-left: none
+            border-top: none
+            transform: rotate(45deg) translate(-50%)
+            top: 2px
+            left: 50%
