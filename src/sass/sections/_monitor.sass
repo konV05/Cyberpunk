@@ -1,0 +1,76 @@
+.monitor
+	padding: 70px 0
+	min-height: 676px
+	background-color: var(--local-yellow)
+	&__wrapper
+		display: flex
+		justify-content: space-between
+	&__block
+		width: 624px
+	&__img
+		margin-bottom: 26px
+	&__collaboration
+		&:last-child
+			width: 320px
+		&-wrapper
+			display: flex
+			width: 540px
+			margin: 0 auto
+			justify-content: space-between
+		&-divider
+			width: 90px
+			margin: auto 0
+			position: relative
+			height: 19px
+			&::before
+				content: ''
+				display: block
+				height: 1px
+				width: 92px
+				background-color: #000
+				position: absolute
+				transform: rotate(11deg) translateX(-1px)
+				top: 50%
+				left: 0
+			&::after
+				content: ''
+				display: block
+				height: 1px
+				width: 92px
+				background-color: #000
+				position: absolute
+				transform: rotate(-11deg) translateX(-1px)
+				top: 50%
+				left: 0
+	&__descr
+		font-weight: 400
+		font-size: 18px
+		line-height: 189%
+		color: #000
+		margin-bottom: 10px
+	&__list
+		list-style-type: none
+		margin-bottom: 40px
+	&__item
+		font-weight: 400
+		font-size: 18px
+		color: #000
+		margin-top: 15px
+		display: flex
+		align-items: center
+	&__marker
+		margin-right: 10px
+	&__btn
+		width: 194px
+		height: 59px
+		background-color: #000
+		border: none
+		font-weight: 700
+		font-size: 18px
+		color: var(--local-yellow)
+		cursor: pointer
+		transition: all 0.5s
+		&:hover
+			background-color: #fff
+			color: #000
+			border: 1px solid #000
