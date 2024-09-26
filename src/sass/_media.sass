@@ -1,0 +1,69 @@
+@media (max-width: 1200px)
+    .container
+        max-width: 960px
+    .city
+        &__grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: 196px 424px
+        &__img#big-img
+            grid-row: 2 / 3
+            grid-column: 1 / 3
+
+@media (max-width: 992px)
+    .container
+        max-width: 720px
+    .promo
+        &__link-wrapper
+            width: 350px
+
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .promo
+        &__top-bar
+            flex-wrap: wrap
+            justify-content: center
+        &__link-wrapper
+            margin-top: 10px
+        &__block
+            display: none
+            &.mobile
+                display: block
+        &__title
+            font-size: 55px
+            margin-bottom: 60px
+    .city
+        &__grid
+            grid-template-columns: 100%
+            grid-template-rows: 196px 196px 424px
+        &__img#big-img
+            grid-row: 3 / 4
+            grid-column: 1 / 2
+ 
+@media (max-width: 576px)
+    .container
+        max-width: 100%
+        padding: 0 10px
+    .title
+        font-size: 30px
+    .promo
+        min-height: 713px
+        &__block
+            height: 207px
+            margin-top: 450px
+        &__title
+            font-size: 30px
+            margin-bottom: 25px
+        &__btn
+            width: 244px
+            height: 60px
+            font-size: 20px
+            line-height: 200%
+            padding: 0
+    .city
+        &__grid
+            display: none
+            &.mobile
+                display: grid
+        &__descr
+            font-size: 16px
