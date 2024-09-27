@@ -1,6 +1,10 @@
+@media (min-width: 2500px)
+    .buy-game
+        --right-split-width: 1200px
+    @media (max-width: 1440px)
 @media (max-width: 1280px)
-    .container
-        max-width: 960px
+    html:root
+        --container-width: 960px
     .city
         &__grid
             grid-template-columns: repeat(2, 1fr)
@@ -29,10 +33,25 @@
             bottom: 0
             left: 0
             top: unset
+    .monitor
+        &__block
+            width: 460px
+        &__img
+            margin-top: 42px
+        &__collaboration
+            &-wrapper
+                flex-direction: column
+                align-items: center
+                width: unset
+                height: 230px
+            &-img:first-child
+                width: 80px
+    .buy-game
+        --right-split-width: 692px                
 
 @media (max-width: 992px)
-    .container
-        max-width: 720px
+    html:root
+        --container-width: 720px
     .promo
         &__link-wrapper
             width: 350px
@@ -66,9 +85,34 @@
             height: 410px
             & img
                 transform: scale(0.9)
+    .monitor
+        &__wrapper
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__block
+            width: unset
+            width: 600px
+            &:first-child
+                margin-bottom: 40px
+        &__collaboration
+            &-wrapper
+                height: unset
+                flex-direction: row
+        &__img
+            margin-top: 0
+    .buy-game
+        --right-split-width: 520px
+    .footer
+        &__wrapper
+            flex-wrap: wrap
+            justify-content: center
+        &__link-wrapper
+            margin-top: 15px
+
 @media (max-width: 768px)
-    .container
-        max-width: 540px
+    html:root
+        --container-width: 540px
     .promo
         &__top-bar
             flex-wrap: wrap
@@ -97,6 +141,17 @@
         & img
             transform: scale(0.7)
             top: 0
+    .monitor__block
+        width: unset
+    .buy-game
+        background-color: #000
+        &__split
+            &-wrapper
+                display: none
+        &__mobile-img
+            display: block
+        &__container
+            padding: 40px 0 70px 0
  
 @media (max-width: 576px)
     .container
@@ -152,3 +207,45 @@
                 font-size: 16px
             & .files
                 display: none
+    .monitor
+        &__descr
+            font-size: 16px
+        &__item
+            font-size: 16px    
+        &__collaboration
+            &-wrapper
+                width: 296px
+            &-img
+                &:first-child
+                    width: 44px
+                &:last-child
+                    width: 175px
+            &-divider
+                height: 10px
+                width: 50px
+                &::before
+                    width: 50px
+                &::after
+                    width: 50px
+    .buy-game
+        &__container
+            max-width: 100%
+            padding: 40px 10px 70px 10px
+        &__list-title
+            font-size: 20px
+        &__platform
+            column-gap: 56px
+            rg: 40px
+            &-header
+                font-size: 20px
+        &__item
+            font-size: 16px
+        &__marker
+            height: 24px
+    .footer__link-wrapper, .footer__logo-wrapper
+        flex-direction: column
+        align-items: center
+    .footer
+        &__link
+            font-size: 16px
+            margin-top: 15px
