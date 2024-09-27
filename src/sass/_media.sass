@@ -1,4 +1,4 @@
-@media (max-width: 1200px)
+@media (max-width: 1280px)
     .container
         max-width: 960px
     .city
@@ -8,6 +8,27 @@
         &__img#big-img
             grid-row: 2 / 3
             grid-column: 1 / 3
+    .win
+        padding: 95px 0 70px 0
+        &__grid
+            grid-template-columns: repeat(2, 460px)
+            grid-template-rows: 377px 383px
+            row-gap: 98px
+        &__text
+            grid-column: 1 / 2
+            width: unset
+            margin-top: 67px
+        &__form
+            grid-row: 2 / 3
+        &__img-wrapper
+            grid-column: 2 / 3
+            grid-row: 1 / 3
+        &__top-bar
+            padding: 0
+        &__ps-wrapper
+            bottom: 0
+            left: 0
+            top: unset
 
 @media (max-width: 992px)
     .container
@@ -15,7 +36,36 @@
     .promo
         &__link-wrapper
             width: 350px
-
+    .win
+        &__promo
+            top: 20px
+        &__grid
+            grid-template-columns: 1fr
+            grid-template-rows: 410px auto auto
+            row-gap: 25px
+        &__text
+            grid-row: 2 / 3
+            width: unset
+            margin-top: 0
+        &__form
+            justify-self: center
+            grid-row: 3 / 4
+            margin-top: 55px
+        &__img-wrapper
+            grid-column: 1 / 2
+            grid-row: 1 / 2
+        &__ps-wrapper
+            left: unset
+            right: 0
+            width: 414px
+            height: 410px
+            & img
+                transform: scale(0.9)
+        &__xbox-wrapper
+            width: 414px
+            height: 410px
+            & img
+                transform: scale(0.9)
 @media (max-width: 768px)
     .container
         max-width: 540px
@@ -39,6 +89,14 @@
         &__img#big-img
             grid-row: 3 / 4
             grid-column: 1 / 2
+    .win__grid
+        grid-template-rows: 320px auto auto
+    .win__xbox-wrapper, .win__ps-wrapper
+        width: 322px
+        height: 320px
+        & img
+            transform: scale(0.7)
+            top: 0
  
 @media (max-width: 576px)
     .container
@@ -67,3 +125,30 @@
                 display: grid
         &__descr
             font-size: 16px
+    .win
+        &__grid
+            grid-template-rows: 130px auto auto
+        &__form
+            grid-template-columns: 100%
+        &__img-wrapper
+            display: grid
+            grid-template-columns: repeat(2, 132px)
+            gap: 32px
+            justify-content: center
+            & div
+                display: none
+            & .mobile
+                display: block
+        &__descr
+            font-size: 16px
+            line-height: 200%
+        &__promo
+            width: 62px
+            height: 62px
+        &__text-input
+            font-size: 16px
+        &__dropbox
+            & .underline
+                font-size: 16px
+            & .files
+                display: none

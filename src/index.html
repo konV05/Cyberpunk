@@ -50,22 +50,24 @@
     </section>
 
     <div class="divider_2-3"></div>
-    
+
     <section class="win">
         <div class="container">
-            <div class="win__top-bar">
-                <img src="icons/promotion.svg" alt="promotion" class="win__promo">
-                <h2 class="title title_white">Играй и выигрывай!</h2>
-            </div>
-            <div class="win__descr">Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или <span>Sony PlayStation 5</span>! Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</div>
-            <div class="win__wrapper">
+            <img src="icons/promotion.svg" alt="promotion" class="win__promo">
+            <div class="win__grid">
+                <div class="win__text">
+                    <div class="win__top-bar">  
+                        <h2 class="title title_white">Играй и выигрывай!</h2>
+                    </div>
+                    <div class="win__descr">Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</div>
+                </div>
                 <form action="" class="win__form">
                     <input required type="text" name="name" placeholder="Как тебя зовут?" class="win__text-input">
                     <input required type="email" name="email" placeholder="Твой е-mail" class="win__text-input">
                     <div class="win__dropbox">
                         <input required type="file" name="screen" id="screen">
                         <label for="screen"><span class="underline">Прикрепить скриншот</span><br>
-                        <span>.png / .jpg / .pdf</span></label>
+                        <span class="files">.png / .jpg / .pdf</span></label>
                     </div>
                     <div class="win__bot-row">
                         <input type="submit" class="win__btn">
@@ -78,9 +80,18 @@
                         </div>
                     </div>
                 </form>
-                <img src="img/ps-and-xbox.png" alt="ps-and-xbox" class="win__img">
+                <div class="win__img-wrapper">
+                     <div class="win__xbox-wrapper">
+                        <img src="img/ps-and-xbox/xbox.png" alt="xbox" class="win__xbox">
+                     </div>
+                     <img src="img/ps-and-xbox/xbox-mini.png" alt="xbox" class="mobile">
+                     <div class="win__ps-wrapper">
+                        <img src="img/ps-and-xbox/ps.png" alt="playstation" class="win__ps">
+                     </div>
+                     <img src="img/ps-and-xbox/ps-mini.png" alt="playstation"class="mobile">
+                </div>
             </div>
-        </div>  
+        </div>
     </section>
     <!-- <div class="divider_3-4"></div>
     <section class="monitor">
