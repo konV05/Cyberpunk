@@ -3,10 +3,12 @@
     box-sizing: border-box
     margin: 0
     padding: 0
-html:root
-    --local-yellow: #F8F200
-    --local-blue: #52BEDC
-    --container-width: 1280px
+html
+    scroll-behavior: smooth
+    &:root
+        --local-yellow: #F8F200
+        --local-blue: #52BEDC
+        --container-width: 1280px
 
 body
     padding: 0
@@ -18,6 +20,7 @@ body
 
 @import 'blocks/title'
 @import 'blocks/divider'
+@import 'blocks/animation'
 
 @import 'sections/promo'
 @import 'sections/city'

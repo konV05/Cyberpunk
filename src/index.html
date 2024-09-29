@@ -21,9 +21,9 @@
                     <a href="#" class="promo__link"><img src="icons/links/instagram.svg" alt="instagram" class="promo__link-img"></a>
                 </div>
             </div>
-            <div class="promo__block">
+            <div data-animation="fade-in-left" class="promo__block">
                 <h1 class="promo__title">Доступно на всех платформах</h1>
-                <button class="promo__btn">Узнать больше</button>
+                <a href="#buy-game" class="promo__btn">Узнать больше</a>
             </div>
         </div>
         <div class="promo__block mobile">
@@ -34,8 +34,8 @@
 
     <section class="city">
         <div class="container">
-            <h2 class="title">Найт-Сити изменит тебя навсегда!</h2>
-            <div class="city__descr"><span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.</div>
+            <h2 data-animation="fade-in-up" class="title">Найт-Сити изменит тебя навсегда!</h2>
+            <div data-animation="fade-in-up" class="city__descr"><span>Cyberpunk 2077</span> — приключенческая ролевая игра, действие которой происходит в мегаполисе Найт-Сити, где власть, роскошь и модификации тела ценятся выше всего. Ты играешь за V, наёмника в поисках устройства, позволяющего обрести бессмертие. Ты сможешь менять киберимпланты, навыки и стиль игры своего персонажа, исследуя открытый мир, где твои поступки влияют на ход сюжета и всё, что тебя окружает.</div>
             <div class="city__grid">
                 <div class="city__img"><img src="img/city-imgs/city-img-small-1.png" alt="city"></div>
                 <div class="city__img" id="big-img"><img src="img/city-imgs/city-img-big.png" alt="city"></div>
@@ -57,9 +57,9 @@
             <div class="win__grid">
                 <div class="win__text">
                     <div class="win__top-bar">  
-                        <h2 class="title title_white">Играй и выигрывай!</h2>
+                        <h2 data-animation="fade-in-up" class="title title_white">Играй и выигрывай!</h2>
                     </div>
-                    <div class="win__descr">Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</div>
+                    <div data-animation="fade-in-up" class="win__descr">Играй в <span>Cyberpunk 2077</span> и получи возможность выиграть консоль <span>Xbox Series X</span> или <span>Sony PlayStation 5!</span> Заполни форму ниже и приложи скриншот о покупке игры. Итоги розыгрыша будут подведены 1 февраля. Удачи! ;)</div>
                 </div>
                 <form action="" class="win__form">
                     <input required type="text" name="name" placeholder="Как тебя зовут?" class="win__text-input">
@@ -108,12 +108,12 @@
                     </div>
                 </div>
                 <div class="monitor__block">
-                    <div class="title">Полное погружение вместе с HP</div>
-                    <div class="monitor__descr">Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</div>
+                    <div data-animation="fade-in-up" class="title">Полное погружение вместе с HP</div>
+                    <div data-animation="fade-in-up" class="monitor__descr">Погрузись в современные экшен-игры с реалистичным изображением с помощью монитора с диагональю 23,8 дюйма, созданном для отображения максимально насыщенных цветов. Успевай реагировать на любые события с временем отклика 1 мс и частотой в 144 Гц!</div>
                     <ul class="monitor__list">
-                        <li class="monitor__item"><img src="icons/list-markers/color_lens_1.svg" alt="marker" class="monitor__marker">Яркие насыщенные цвета</li>
-                        <li class="monitor__item"><img src="icons/list-markers/color_lens_2.svg" alt="marker" class="monitor__marker">Кристальная четкость изображения</li>
-                        <li class="monitor__item"><img src="icons/list-markers/awesome_motion_3.svg" alt="marker" class="monitor__marker">Быстрые движения и плавный геймплей</li>
+                        <li data-animation="fade-in-left" class="monitor__item"><img src="icons/list-markers/color_lens_1.svg" alt="marker" class="monitor__marker">Яркие насыщенные цвета</li>
+                        <li data-animation="fade-in-left" data-animation-delay="500" class="monitor__item"><img src="icons/list-markers/color_lens_2.svg" alt="marker" class="monitor__marker">Кристальная четкость изображения</li>
+                        <li data-animation="fade-in-left" data-animation-delay="1000" class="monitor__item"><img src="icons/list-markers/awesome_motion_3.svg" alt="marker" class="monitor__marker">Быстрые движения и плавный геймплей</li>
                     </ul>
                     <button class="monitor__btn">Подробнее</button>
                 </div>
@@ -121,32 +121,32 @@
         </div>
     </section>
 
-    <section class="buy-game">
+    <section class="buy-game" id="buy-game">
         <div class="buy-game__split-wrapper">
             <div class="buy-game__split_left"></div>
             <div class="buy-game__split_right"></div>
         </div>
         <img src="img/disks.jpg" alt="disks" class="buy-game__mobile-img">
         <div class="buy-game__container">
-            <div class="title title_white">Купить игру Cyberpunk 2077</div>
+            <div class="title title_white" data-animation="fade-in-up">Купить игру Cyberpunk 2077</div>
             <ul class="buy-game__list">
-                <div class="buy-game__list-title">В комплект входит:</div>
-                <li class="buy-game__item"><img src="icons/disk-list-markers/disk_1.svg" alt="" class="buy-game__marker">Яркие насыщенные цвета</li>
-                <li class="buy-game__item"><img src="icons/disk-list-markers/code_2.svg" alt="" class="buy-game__marker">Футляр с кодом для загрузки игры и дисками (pc)</li>
-                <li class="buy-game__item"><img src="icons/disk-list-markers/collections_3.svg" alt="" class="buy-game__marker">Справочник с информацией об игровом мире</li>
+                <div class="buy-game__list-title" data-animation="fade-in-left">В комплект входит:</div>
+                <li class="buy-game__item" data-animation="fade-in-left" data-animation-delay="500"><img src="icons/disk-list-markers/disk_1.svg" alt="" class="buy-game__marker">Яркие насыщенные цвета</li>
+                <li class="buy-game__item" data-animation="fade-in-left" data-animation-delay="1000"><img src="icons/disk-list-markers/code_2.svg" alt="" class="buy-game__marker">Футляр с кодом для загрузки игры и дисками (pc)</li>
+                <li class="buy-game__item" data-animation="fade-in-left" data-animation-delay="1500"><img src="icons/disk-list-markers/collections_3.svg" alt="" class="buy-game__marker">Справочник с информацией об игровом мире</li>
             </ul>
-            <div class="buy-game__platform-header">Выберите платформу:</div>
+            <div class="buy-game__platform-header" data-animation="fade-in-left">Выберите платформу:</div>
             <div class="buy-game__platform">
-                <a href="#" class="buy-game__platform-link">
+                <a href="#" class="buy-game__platform-link" data-animation="fade-in-left" data-animation-delay="1000">
                     <img src="icons/platforms/pc.svg" alt="pc" class="buy-game__platform-logo">
                 </a>
-                <a href="#" class="buy-game__platform-link">
+                <a href="#" class="buy-game__platform-link" data-animation="fade-in-left" data-animation-delay="1500">
                     <img src="icons/platforms/xbox.svg" alt="xbox" class="buy-game__platform-logo">
                 </a>
-                <a href="#" class="buy-game__platform-link">
+                <a href="#" class="buy-game__platform-link" data-animation="fade-in-left" data-animation-delay="1000">
                     <img src="icons/platforms/stadia.svg" alt="stadia" class="buy-game__platform-logo">
                 </a>
-                <a href="#" class="buy-game__platform-link">
+                <a href="#" class="buy-game__platform-link" data-animation="fade-in-left" data-animation-delay="1500">
                     <img src="icons/platforms/playstation.svg" alt="playstation" class="buy-game__platform-logo">
                 </a>
             </div>
